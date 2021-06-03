@@ -1,0 +1,21 @@
+{
+	"name": "scheduler",
+	"version": "1.0.0",
+	"description": "A simple scheduling app for the day",
+	"main": "server.js",
+	"scripts": {
+		"start": "set NODE_ENV=production&& node server",
+		"server": "nodemon server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "Kade Powell",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.4"
+	}
+}
